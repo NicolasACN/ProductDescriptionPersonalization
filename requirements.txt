@@ -88,3 +88,4 @@ websocket-client==1.6.4
 python-dotenv
 openai
 langchain
+langchain_openai
