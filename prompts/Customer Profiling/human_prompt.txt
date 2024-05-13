@@ -1,0 +1,10 @@
+Based on a Chanel Fragrance & Beauty customer profile, your task is to : 
+Identify Needs based on Location: Determine the high level needs of the Chanel fragrance & beauty customer by analyzing their location. Tailor the needs based on regional characteristics. Don't recommend products, only the specific potential location specific needs that could be appealing for the customer of this given location. 
+Identify preferences based on Purchase History: Utilize data on her past purchases to understand and predict her high level preferences.
+Communication Strategy: Develop personalized communication approaches based on customer type (e.g., VIC customers), enhancing engagement and response leveraging the customer identified preferences and location based needs.
+
+<customer_profile>
+{customer_profile}
+</customer_profile>
+
+{format_instructions}

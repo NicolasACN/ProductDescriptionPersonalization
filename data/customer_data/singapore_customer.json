@@ -1,0 +1,34 @@
+
+{
+    "description": "Rachel is a Very Important Customer (VIC) at Chanel in Singapore. She is known for her impeccable taste in luxury fashion and frequently shops for exclusive pieces. Rachel appreciates Chanel's heritage and craftsmanship, and she often attends brand events and private showings. Her loyalty and engagement with the brand make her a valued member of Chanel's elite clientele in the region.",
+    "location": "Singapore",
+    "status": "Very Important Customer",
+    "purchase_history": {
+        "fragrance": [
+            {
+                "name": "Chanel N°5 Eau de Parfum",
+                "purchase_information": "Regular purchase every six months."
+            },
+            {
+                "name": "Chance Eau Tendre",
+                "purchase_information": "Purchased once last year."
+            }
+        ],
+        "beauty_products": [
+            {
+                "name": "Sublimage La Crème",
+                "purchase_information": "Purchased quarterly"
+            },
+            {
+                "name": "Les Beiges Water-Fresh Tint",
+                "purchase_information": "Recently tried in store."
+            }
+        ],
+        "seasonal_offerings": [
+            {
+                "name": "Coco Mademoiselle Spring Set",
+                "purchase_information": "Purchased annually for the past three years."
+            }
+        ]
+    }
+}
