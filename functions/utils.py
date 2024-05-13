@@ -8,8 +8,11 @@ from langchain_core.output_parsers import JsonOutputParser
 from langchain_openai.chat_models import ChatOpenAI
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from operator import itemgetter
+import streamlit as st
 
-load_dotenv(find_dotenv())
+openai.api_key = st.secrets["openai_secret"]["api_key"]
+
+#load_dotenv(find_dotenv())
 openai.api_key = os.environ['OPENAI_API_KEY']
 
 # Instantiate GPT Model 
