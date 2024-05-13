@@ -10,7 +10,7 @@ from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from operator import itemgetter
 import streamlit as st
 
-openai.api_key = st.secrets["openai_secret"]["api_key"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 #load_dotenv(find_dotenv())
 openai.api_key = os.environ['OPENAI_API_KEY']
