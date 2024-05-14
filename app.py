@@ -1,4 +1,4 @@
-from functions.utils import personalize_content, write_file, read_file
+from functions.utils import personalize_content, write_file, read_file, create_persona_form
 import streamlit as st
 import os
 import json
@@ -31,7 +31,7 @@ product_options = {
 # Define the app layout and functionality
 def main():
     st.title("Product Description Personalization")
-    tab1, tab2, tab3 = st.tabs(["Product Description Personalization", "Prompt Factory", "Edit Guidelines"])
+    tab1, tab2, tab3, tab4 = st.tabs(["Product Description Personalization", "Prompt Factory", "Edit Guidelines", "Persona Editor"])
 
     with tab1: 
         # Product Selection
@@ -115,6 +115,33 @@ def main():
                 if edited_content != file_content:
                     if st.button(f"Save Changes to {selected_file}"):
                         write_file(file_path, edited_content)
+                        
+    with tab4:
+        st.header("Persona Editor")
+        # Load and edit existing personas
+        customer_data_path = os.path.join(os.getcwd(), "data", "customer_data")
+        persona_files = os.listdir(customer_data_path)
+        persona_files_display = [f.replace('.json', '').replace('_', ' ').capitalize() for f in persona_files]
+        selected_persona_file = st.selectbox("Select Persona File", [""] + persona_files_display)
+
+        if selected_persona_file:
+            file_path = os.path.join(customer_data_path, selected_persona_file.replace(' ', '_').lower() + '.json')
+            with open(file_path, "r") as file:
+                persona_data = json.load(file)
+            persona_text = st.text_area("Edit Persona JSON", value=json.dumps(persona_data, indent=4), height=300)
+            if persona_text != json.dumps(persona_data, indent=4):
+                if st.button("Save Changes"):
+                    with open(file_path, "w") as file:
+                        json.dump(json.loads(persona_text), file, indent=4)
+
+        # Add a new persona
+        if st.button("Add New Persona"):
+            new_persona = create_persona_form()
+            if new_persona:
+                new_persona_file = st.text_input("Enter new file name", value="new_persona.json")
+                if st.button("Save New Persona"):
+                    with open(os.path.join(customer_data_path, new_persona_file), "w") as file:
+                        json.dump(new_persona, file, indent=4)        
 
 
 if __name__ == "__main__":

@@ -187,3 +187,16 @@ def read_file(file_path):
 def write_file(file_path, content):
     with open(file_path, "w") as file:
         file.write(content)
+        
+def create_persona_form():
+    st.subheader("Create New Persona")
+    description = st.text_input("Description")
+    location = st.text_input("Location")
+    status = st.text_input("Status")
+    # Extend this form based on the structure of the persona JSON you provided
+    return {
+        "description": description,
+        "location": location,
+        "status": status,
+        "purchase_history": {}  # You would add form fields for each item here similarly
+    }

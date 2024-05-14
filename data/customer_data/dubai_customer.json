@@ -1,1 +1,33 @@
-{"description": "Samira is an affluent entrepreneur in her early 40s who enjoys the opulence and luxury lifestyle typical of Dubai. She is an influencer in the local fashion scene and actively participates in charity events.", "location": "Dubai, United Arab Emirates", "status": "Very Important Customer", "purchase_history": {"fragrance": [{"name": "Chanel Gabrielle Essence Eau de Parfum", "purchase_information": "Purchased regularly."}, {"name": "Bleu de Chanel", "purchase_information": "Bought frequently as a gift for her professional network."}], "beauty_products": [{"name": "Le Lift Cr\u00e8me", "purchase_information": "Consistent user, purchasing every four months."}, {"name": "Rouge Allure Ink Fusion", "purchase_information": "Enjoys experimenting with bold lib colors, often trying new shades soon after they launch."}], "seasonal_offerings": [{"name": "Limited Edition Les Exclusifs de Chanel", "purchase_information": "Collects limited edition items, often purchasing on release day."}]}}
+{
+    "description": "Samira is an affluent entrepreneur in her early 40s who enjoys the opulence and luxury lifestyle typical of Dubai. She is an influencer in the local fashion scene and actively participates in charity events.",
+    "location": "Dubai, United Arab Emirates",
+    "status": "Very Important Customer",
+    "purchase_history": {
+        "fragrance": [
+            {
+                "name": "Chanel Gabrielle Essence Eau de Parfum",
+                "purchase_information": "Purchased regularly."
+            },
+            {
+                "name": "Bleu de Chanel",
+                "purchase_information": "Bought frequently as a gift for her professional network."
+            }
+        ],
+        "beauty_products": [
+            {
+                "name": "Le Lift Crème",
+                "purchase_information": "Consistent user, purchasing every four months."
+            },
+            {
+                "name": "Rouge Allure Ink Fusion",
+                "purchase_information": "Enjoys experimenting with bold lib colors, often trying new shades soon after they launch."
+            }
+        ],
+        "seasonal_offerings": [
+            {
+                "name": "Limited Edition Les Exclusifs de Chanel",
+                "purchase_information": "Collects limited edition items, often purchasing on release day."
+            }
+        ]
+    }
+}
