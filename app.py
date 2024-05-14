@@ -117,7 +117,7 @@ def main():
                         write_file(file_path, edited_content)
                         
     with tab4:
-        st.header("Persona Editor")
+        st.header("Customer Factory")
         # Load and edit existing personas
         customer_data_path = os.path.join(os.getcwd(), "data", "customer_data")
         persona_files = os.listdir(customer_data_path)
@@ -135,7 +135,7 @@ def main():
                         json.dump(json.loads(persona_text), file, indent=4)
 
         # Add a new persona
-        if st.button("Add New Persona"):
+        if st.button("Add New Customer"):
             new_persona = create_persona_form()
             if new_persona:
                 new_persona_file = st.text_input("Enter new file name", value="new_persona.json")
