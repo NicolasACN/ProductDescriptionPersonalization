@@ -188,12 +188,22 @@ def write_file(file_path, content):
     with open(file_path, "w") as file:
         file.write(content)
         
+def load_persona(file_path):
+    with open(file_path, "r") as file:
+        return json.load(file)
+
+def save_persona(file_path, data):
+    with open(file_path, "w") as file:
+        json.dump(data, file, indent=4)
+
+def create_new_persona():
+    st.session_state.create_new = True
+
 def create_persona_form():
     st.subheader("Create New Persona")
     description = st.text_input("Description")
     location = st.text_input("Location")
     status = st.text_input("Status")
-    # Dynamic purchase history section
     purchase_history = []
     purchase_entries = st.number_input("Number of Purchase Entries", min_value=0, value=0, step=1)
     for i in range(purchase_entries):
@@ -202,7 +212,6 @@ def create_persona_form():
             name = col1.text_input(f"Product Name {i+1}", key=f"name_{i}")
             purchase_info = col2.text_input(f"Purchase Information {i+1}", key=f"info_{i}")
             purchase_history.append({"name": name, "purchase_information": purchase_info})
-
     return {
         "description": description,
         "location": location,

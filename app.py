@@ -1,4 +1,4 @@
-from functions.utils import personalize_content, write_file, read_file, create_persona_form
+from functions.utils import personalize_content, write_file, read_file, create_persona_form, create_new_persona, save_persona, load_persona
 import streamlit as st
 import os
 import json
@@ -126,23 +126,24 @@ def main():
 
         if selected_persona_file:
             file_path = os.path.join(customer_data_path, selected_persona_file.replace(' ', '_').lower() + '.json')
-            with open(file_path, "r") as file:
-                persona_data = json.load(file)
+            persona_data = load_persona(file_path)
             persona_text = st.text_area("Edit Persona JSON", value=json.dumps(persona_data, indent=4), height=300)
             if persona_text != json.dumps(persona_data, indent=4):
                 if st.button("Save Changes"):
-                    with open(file_path, "w") as file:
-                        json.dump(json.loads(persona_text), file, indent=4)
+                    save_persona(file_path, json.loads(persona_text))
 
         # Add a new persona
-        if st.button("Add New Customer Profile"):
+        st.button("Add New Persona", on_click=create_new_persona)
+
+        # Display form to add a new persona if triggered
+        if 'create_new' in st.session_state and st.session_state.create_new:
             new_persona = create_persona_form()
             if new_persona:
                 new_persona_file = st.text_input("Enter new file name", value="new_persona.json")
-                if st.button("Save New Persona"):
+                if st.button("Save New Customer Profile"):
                     with open(os.path.join(customer_data_path, new_persona_file), "w") as file:
-                        json.dump(new_persona, file, indent=4)     
-
+                        json.dump(new_persona, file, indent=4)
+                    del st.session_state.create_new  # Reset the creation state
 
 if __name__ == "__main__":
     main()
