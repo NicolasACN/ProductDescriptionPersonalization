@@ -31,7 +31,7 @@ product_options = {
 # Define the app layout and functionality
 def main():
     st.title("Product Description Personalization")
-    tab1, tab2, tab3, tab4 = st.tabs(["Product Description Personalization", "Prompt Factory", "Edit Guidelines", "Persona Editor"])
+    tab1, tab2, tab3, tab4 = st.tabs(["Product Description Personalization", "Prompt Factory", "Edit Guidelines", "Customer Profile Factory"])
 
     with tab1: 
         # Product Selection
