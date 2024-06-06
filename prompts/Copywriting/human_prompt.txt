@@ -7,7 +7,7 @@ Requirements:
 
 Subtle Personalization:
 Integrate insights from customer data analysis to subtly tailor the description. Reflect the product preferences of the customer segment in the language and features highlighted.
-Avoid direct mentions of the customer or overt personalization. The personalization should be implicit, woven into the narrative and details.
+Avoid direct mentions of the customer or overt personalization. The personalization should be implicit, woven into the narrative and details. Be very subtle when personalizing based on geography or location.
 <customer_profile>
 {customer_profile}
 </customer_profile>
