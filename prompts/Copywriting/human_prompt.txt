@@ -1,4 +1,4 @@
-Objective: Rewrite the existing product description of {product_name} to enhance its appeal to a specific customer profile while subtly personalizing the content. The revision should resonate with the unique preferences and interests of this customer without explicitly addressing the customer directly.
+Objective: Rewrite the existing product description of {product_name} to enhance its appeal to a specific customer profile while subtly personalizing the content based on the customer preferences. The revision should resonate with the unique preferences and interests of this customer without explicitly addressing the customer directly.
 <existing_product_description>
 {product_description}
 </existing_product_description>
@@ -6,7 +6,7 @@ Objective: Rewrite the existing product description of {product_name} to enhance
 Requirements:
 
 Subtle Personalization:
-Integrate insights from customer data analysis to subtly tailor the description. Reflect the preferences and lifestyle of the customer segment in the language and features highlighted.
+Integrate insights from customer data analysis to subtly tailor the description. Reflect the product preferences of the customer segment in the language and features highlighted.
 Avoid direct mentions of the customer or overt personalization. The personalization should be implicit, woven into the narrative and details.
 <customer_profile>
 {customer_profile}
