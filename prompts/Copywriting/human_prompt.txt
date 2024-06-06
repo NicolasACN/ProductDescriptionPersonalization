@@ -39,5 +39,5 @@ Ensure the description meets any technical specifications provided, such as keyw
 {platform_specs}
 </platform_specifications>
 
-Warning : Be subtle on personalization, don't overly mention the location. Don't come up with information you haven't been given. 
+ Do hightlight the product already purchased that relates to this one. Don't come up with information you haven't been given. Warning : Be subtle on personalization, don't mention the location more than once. Don't forget to mention relevant product from the customer profile purchase history.
 {format_instructions}
