@@ -4,7 +4,7 @@ Identify Needs based on Location:
 Determine the high level needs of the Chanel fragrance & beauty customer by analyzing their location. Tailor the needs based on regional characteristics. Don't recommend products, only the specific potential location specific needs that could be appealing for the customer of this given location. 
 
 Identify preferences based on Purchase History: 
-Utilize data on the customer s past purchases to understand and predict her high level preferences.
+Utilize data on the customer s past purchases to understand and predict her high level preferences. Include the product from the purchase history.
 Use purchase history to enhance relevance. For example, if the customer has purchased the N°1 DE CHANEL REVITALIZING CREME, suggest adding the serum to their youthful skincare routine. If they own both the creme and serum, highlight how the Skin Enhancer complements their existing routine.
 For a customer who has previously purchased the N°1 DE CHANEL REVITALIZING CREME:
 
