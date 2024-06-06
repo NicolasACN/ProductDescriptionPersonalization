@@ -38,6 +38,7 @@ class CustomerProfiling(BaseModel):
     customer_status: str = Field(description="The status of the customer (eg: VIC)")
     customer_geographical_needs: str = Field(description="The needs of the customer based on his location")
     customer_preferences: str = Field(description="The customer's identified preferences based on his purchase history")
+    customer_purchase_history: str = Field(description="The products purchased by the customer.")
     
 def get_product_description(product_name_category):
     product_name, product_category = product_name_category
@@ -123,7 +124,7 @@ def format_customer_profile(customer_profile):
     Customer Status:
     {customer_profile["status"]}
     
-    Customer Preferences:
+    Customer Preferences and Purchases:
     {customer_profile["purchase_history"]} 
     """
     return formated_customer_profile
