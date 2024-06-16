@@ -1,44 +1,39 @@
-Objective: Rewrite the existing product description of {product_name} to enhance its appeal to a specific customer profile while subtly personalizing the content based on the customer preferences. The revision should resonate with the unique preferences and interests of this customer without explicitly addressing the customer directly.
-<existing_product_description>
-{product_description}
-</existing_product_description>
+Objective: Write a new version inspirational, evocative, sophisticated and elegant text to appear the product detail page of {product_name} based on the provided details and information about the fragrance and following the same structure and tone of voice as the provided reference details pages. The copy needs to be written in {language}.
+<product_details>
+{product_data}
+</product_details>
 
-Requirements:
-
-Subtle Personalization:
-Integrate insights from customer data analysis to subtly tailor the description. Reflect the product preferences of the customer segment in the language and features highlighted.
-Avoid direct mentions of the customer or overt personalization. The personalization should be implicit, woven into the narrative and details. Be very subtle when personalizing based on geography or location.
-<customer_profile>
-{customer_profile}
-</customer_profile>
-
-Example of personalization based on the purchase history and preferences : 
-For a customer who has previously purchased the N°1 DE CHANEL REVITALIZING CREME:
-Personalize the description of the N°1 DE CHANEL REVITALIZING SERUM to suggest it as an essential addition to their youthful skincare routine.
-For a customer who has both the creme and serum, highlight the Skin Enhancer as a complementary beauty gesture to enhance their routine.
-By incorporating these elements, the personalized product descriptions will be more aligned with customer preferences, fostering a deeper connection with Chanel's brand experience.
-Try to relate the current product with other relevant products bought by the customer in a subtle way. 
-
-Chanel Culture and Heritage:
-Infuse the description with elements of Chanel's rich heritage and brand ethos. Highlight the legacy of innovation, luxury, and style that defines Chanel.
-Incorporate themes of empowerment, craftsmanship, and timeless elegance, drawing connections between the product and Chanel’s historical significance.
+Hermes Culture and Heritage:
+Infuse the text with elements of Hermes's rich heritage and brand ethos.
 <brand_knowledge>
 {brand_knowledge}
 </brand_knowledge>
 
 Adherence to Copywriting Guidelines:
-Follow the established Chanel copywriting guidelines that dictate the tone, style, and structure of product descriptions. Ensure the language is sophisticated, elegant, and consistent with the brand's voice.
-Use sensory and emotionally resonant language to evoke imagery and feelings, maintaining the luxurious aura of the Chanel brand.
+Follow the established Hermes copywriting guidelines that dictate the tone, style, and structure of product descriptions. Ensure the language is sophisticated, elegant.
+Use sensory and emotionally resonant language to evoke imagery and feelings, maintaining the elagant and sophisticated aura of the Hermes brand.
 <copywriting_guidelines>
 {copywriting_guidelines}
 </copywriting_guidelines>
 
+Ensure the text is consistent with the brand's voice:
+Take inspiration from the following reference product detail pages, ensure that the new product detail page is consistent with the brand voice and use the same language, sophistication, elegance and evocative stories.
+<reference_detail_pages>
+{reference_examples}
+</reference_detail_pages> 
+
+Example text:
+<example_text>
+{existing_product_dp}
+</example_text>
+
 Target Platform Specifications:
 Strictly follow and respect the structure, format and length requirements specific to the platform where the product description will be published.
-Ensure the description meets any technical specifications provided, such as keyword usage for SEO, if applicable, and aligns with the overall content strategy of the platform.
 <platform_specifications>
 {platform_specs}
 </platform_specifications>
 
- Do hightlight the product already purchased that relates to this one. Don't come up with information you haven't been given. Warning : Be subtle on personalization, don't mention the location more than once. Don't forget to mention relevant product from the customer profile purchase history.
+Please write an inspirational, sophisticated and elegant text using the provided information to craft evocative stories that resonate with Hermès' culture and hertiage.
+
+
 {format_instructions}
