@@ -147,7 +147,7 @@ def main():
                     pdp_text = generate_pdp(st.session_state.product_name, st.session_state.product_details, st.session_state.language)
                     formatted_pdp_text = format_pdp_text("--- \n\n" + pdp_text)
                     st.success("PDP generated")
-                    st.subheader("Generated PDP")
+                    st.header("Generated PDP")
                     st.markdown(
                         """
                         <style>
@@ -178,7 +178,7 @@ def main():
             with st.spinner("Adapting PDP..."):
                 adapted_pdp_text = retailer_customize_pdp(st.session_state['selected_product_adapt'], st.session_state['adapt_language'])
                 st.success("PDP adapted")
-                st.subheader("Adapted PDP")
+                st.header("Adapted PDP")
                 st.markdown(
                     """
                     <style>
